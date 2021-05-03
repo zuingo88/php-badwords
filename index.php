@@ -31,11 +31,37 @@
         $sentence = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quae aliquam reprehenderit reiciendis inventore est voluptas aspernatur obcaecati delectus dolore accusantium dolores recusandae, alias harum suscipit sunt aut autem quia.';
 
         $goodSentence = str_replace($badword, '***', $sentence);
-
-        echo $goodSentence;
-
-        //var_dump($badword, $sentence, $goodSentence);
         ?>
+
+        <p>
+            <?php
+            //stampo paragrafo iniziale
+            echo $sentence;
+            ?>
+        </p>
+
+        <p>
+            <?php
+            //stampo la lunghezza del paragrafo iniziale
+            $length = strlen($sentence);
+            echo $length;
+            ?>
+        </p>
+
+        <p>
+            badword = 
+            <?php
+            //stampo paragrafo iniziale
+            echo $badword;
+            ?>
+        </p>
+
+        <p>
+            <?php
+            //stampo stringa
+            echo $goodSentence;
+            ?>
+        </p>
     </h2>
 
 </body>
